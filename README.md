@@ -1,4 +1,4 @@
 # statistics-python
 Some statistics concepts written in python
 
-<h1> This ReadMe file is going to update.</h1>
+<h1> This Readme file is going to update.</h1>
