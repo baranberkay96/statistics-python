@@ -23,14 +23,14 @@ n = 35
 
 """ Find population mean for control"""
 
-mu = df["EngagementRatio"].mean(skipna=True)
+mu = df[selected_column].mean(skipna=True)
 
 """ Sampling """
 sm = df.sample(n=n)
 
 """ Find sample mean and standard deviation for calculate lower and upper bound depends on give confidence interval"""
-mean = sm["EngagementRatio"].mean(skipna=True)
-sd = sm["EngagementRatio"].std(skipna=True)
+mean = sm[selected_column].mean(skipna=True)
+sd = sm[selected_column].std(skipna=True)
 
 """ Determine confidence interval """
 ci = 0.95
